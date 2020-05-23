@@ -1,0 +1,48 @@
+ body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #EA2027;
+}
+
+h1 {
+	color: white;
+	font-size: 50px
+}
+
+span:before {
+	content: 'TRANSITIONS';
+	text-transform: uppercase;
+	font-family: arial;
+	color: #1B1464;
+	animation: word-switch 1s infinite;
+}
+
+@keyframes word-switch {
+	0% { content: 'transitions' }
+
+	10% { content: 'animations' }
+
+	20% { content: 'transforms' }
+
+	30% { content: 'Photography' }
+
+	40% { content: 'Pokemon' }
+
+	50% { content: 'java Script' }
+
+	60% { content: 'Coading' }
+
+	70% { content: 'Programming' }
+
+	80% { content: 'Pokemon go' }
+
+	90% { content: 'Html' }
+
+	100% { content: 'css' }
+}
+
+
+
+

@@ -1,0 +1,400 @@
+/* buttons */
+
+.buttons {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 15px;
+	padding: 50px 0;
+}
+
+a {
+	text-decoration: none;
+	color: #262626;
+	border: 3px solid #262626;
+	font-family: sans-serif;
+	font-size: 45px;
+	padding: 40px 80px;
+	position: relative;
+	overflow: hidden;
+}
+/* 1 */
+
+.circle-movement:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #fff200;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	transform-origin: bottom right;
+ 	transform: rotate(90deg);
+	transition: transform 1s;
+}
+
+.circle-movement:hover:before {
+	transform: rotate(0deg);
+}
+
+/* 2 */
+.swipe-movement {
+	transition: all 1s;
+}
+
+.swipe-movement:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #351435;
+	z-index: -1;
+	transform: translateY(-100%);
+	transition: all 1s;
+}
+
+.swipe-movement:hover:before {
+	transform: translateY(0);
+}
+
+.swipe-movement:hover {
+	color: white;
+}
+
+/* 3 */
+.swiss-cross {
+	transition: 1s;
+}
+
+.swiss-cross:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #262626;
+	transition: 1s;
+	transform: rotateX(90deg);
+	z-index: -1;
+}
+
+.swiss-cross:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #262626;
+	transition: 1s;
+	transform: rotateY(90deg);
+	z-index: -1;
+}
+
+.swiss-cross:hover:before {
+	transform: rotateX(0);
+}
+
+.swiss-cross:hover:after {
+	transform: rotateY(0);
+}
+
+.swiss-cross:hover {
+	color: white;
+}
+
+/* 4 */
+.button-stretch {
+	transition: all 1s;
+}
+
+.button-stretch:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #351435;
+	z-index: -1;
+	transform: translateY(-100%);
+	transition: all 1s;
+}
+
+.button-stretch:hover:before {
+	transform: translateY(0);
+}
+
+.button-stretch:hover {
+	color: white;
+}
+
+
+
+/* 5 */
+.sliding-text {
+	transition: all 1s;
+}
+
+.sliding-text:before {
+	content: 'YEAH!';
+	color: white;
+	background-color: #F44336;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	transform: translateY(-100%);
+	transition:all .5s;
+}
+
+.sliding-text:hover:before {
+	transform: translateY(0);
+}
+
+/* 6 */
+.steel-effect {
+	transition: all 0.3s;
+}
+
+.steel-effect:hover {
+	background-color: #F44336;
+}
+
+.steel-effect:before {
+	content: '';
+	background-color: white;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	transform: translateX(-100%) rotate(45deg);
+	transition: all 0.3s;
+}
+
+.steel-effect:hover:before {
+ 	transform: translateX(100%) rotate(45deg);
+}
+
+
+/* 7 */
+.cross-2-button {
+	color: transparent;
+}
+
+.cross-2-button:before {
+	content: 'Hover Me';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #fffa65;
+	color: #262626;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5s;
+}
+
+.cross-2-button:after {
+	content: 'Hover Me';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #fffa65;
+	color: #262626;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5s;
+	transform: translate(-100%, 100%);
+}
+
+.cross-2-button:hover:before {
+	transform: translate(100%, -100%);
+}
+
+.cross-2-button:hover:after {
+	transform: translate(0, 0);
+}
+
+
+/* 8 */
+.zoom-effect:before {
+	content: 'Hover me';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #262626;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: scale(5);
+	opacity: 0;
+	transition: all .5s;
+}
+
+.zoom-effect:hover:before {
+	transform: scale(1);
+	opacity: 1;
+}
+
+/* images */
+
+.images{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	grid-gap: 15px;
+	padding: 50px 0;
+	font-family: 'Lato', sans-serif;
+}
+
+.container {
+	width: 500px;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+}
+
+.container img {
+	width: 100%;
+	transition: all .5s;
+}
+
+.caption{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	transition: all 0.5s;
+}
+
+.caption h1 {
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.caption p {
+	font-size: 18px;
+	text-transform: capitalize;
+}
+
+/* 1 */
+.caption-rotating_zoom {
+	
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	background-color: rgba(0,0,0,0)
+}
+
+
+
+.container-rotating_zoom:hover .caption {
+	opacity: 1;
+	background-color: rgba(0,0,0,.5);
+}
+
+.container-rotating_zoom:hover img {
+	transform: scale(1.3) rotate(15deg);
+}
+
+/* 2 */
+
+.caption-side_faded {
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	transform: translateY(-100%);
+}
+
+.container-side_faded:hover .caption {
+	background-color: rgba(0,0,0,0.5);
+	transform: translateY(0);
+}
+
+.container-side_faded:hover img {
+	transform: scale(1.3) rotate(-15deg);
+}
+/* 3 */
+
+.caption-swipe {
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	transform: translateY(100%);
+}
+
+.container-swipe:hover .caption {
+	transform: translateY(0);
+}
+
+.container-swipe:hover img {
+	transform: translateY(-100%);
+}
+/* 4 */
+
+.caption-half_slide {
+	bottom: 0;
+	left: 0;
+	height: 30%;
+	width: 100%;
+	background-color: black;
+	transform: translateY(100%);
+}
+
+
+.container-half_slide:hover .caption {
+	transform: translateY(0);
+}
+
+.container-half_slide:hover img {
+	transform: translateY(-30%);
+}
+
+/* image zoom */
+.zoom {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+div {
+	width: 300px;
+	height: 400px;
+	border: 5px solid white;
+	overflow: hidden;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	transition: transform 1s;
+}
+
+img:hover {
+	transform: scale(1.2) rotate(9deg);
+}

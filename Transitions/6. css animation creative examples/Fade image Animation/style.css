@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #444;
+}
+
+.slider {
+    width: 600px;
+    height: 400px;
+
+    margin: 100px auto;
+
+    background-image: url(image/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    animation: slide 12s infinite;
+    transition: 600ms;
+
+    box-shadow: 0 0px 50px rgba(0, 0, 0, 1), inset 0 0px 400px rgba(0, 0, 0, .6);
+    border-radius: 5px;
+}
+
+@keyframes slide {
+    20% {
+        background-image: url(image/2.jpg);
+    }
+    40% {
+        background-image: url(image/3.jpg);
+    }
+    60% {
+        background-image: url(image/4.jpg);
+    }
+    80% {
+        background-image: url(image/5.jpg);
+    }
+    100% {
+        background-image: url(image/1.jpg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
