@@ -1,0 +1,38 @@
+// cd E:\Web_Devlopment\CSS\Natours\v4
+
+// npm run compile:sass
+// npm run concat:css
+// npm run prefix:css
+// npm run compress:css
+
+// npm install -g live-server
+
+// npm run start
+// npm run build:css
+
+
+@import "abstract/functions";
+@import "abstract/mixins";
+@import "abstract/variables";
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components//bg-video";
+@import "components/button";
+@import "components/cards";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/form";
+@import "components/popup";
+@import "components/story";
+
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+
+@import "pages/home";
+
