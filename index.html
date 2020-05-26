@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans Condensed', sans-serif;
+            background: #b2ebf2;
+        }
+
+        .heading{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: .5rem;
+            font-size: 3rem;
+            color: #e65100;
+        }
+
+        .bottom-padding--big {
+            padding-bottom: 30em;
+        }
+
+        .bottom-padding--small {
+            padding-bottom: 5em;
+        }
+
+        .container {
+            margin: 2rem 7rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(50px, min-content);
+            justify-content: center;
+            grid-gap: 1.2rem;
+        }
+
+        @media only screen and (max-width: 70em) {
+            .container {
+                grid-template-columns: repeat(3, 1fr); 
+            } 
+        }
+
+        @media only screen and (max-width: 55em) {
+            .container {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+        }
+
+        @media only screen and (max-width: 35em) {
+            .container {
+                grid-template-columns: repeat(1, 1fr); 
+            }
+        }
+
+        .container .border-wall {
+            grid-column: span 4;
+        }
+
+        .container .projects {
+            display: flex;
+            align-items: center;
+            border: 3px solid #1b5e20;
+            transition: all .2s;
+        }
+
+        .container .projects:hover{
+            transform: translateY(-5px) scale(1.05);
+            border: 3px solid #43a047;
+        }
+
+        .container .projects a{
+            font-size: 1.7em;
+            color: #43a047;
+            text-decoration: none;
+            padding: 1rem;
+            transition: all .2;
+        }
+
+        .container .projects:hover a{
+            color: #2e7d32;
+        }
+
+        .container a:visited {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>    
+
+    <!-- Natours -->
+    <h1 class="heading">Projects</h1>
+    <div class="container bottom-padding--small">
+        <div class="projects">
+            <a target="_blank" href="./Natours/v4/index.html">
+                Natours
+            </a>
+        </div> 
+
+        <div class="projects">
+            <a target="_blank" href="./Nexter/index.html">
+                Nexter
+            </a>
+        </div> 
+
+        <div class="projects">
+            <a target="_blank" href="./Vanila JS/css-theme-switcher/index.html">
+                Trilo
+            </a>
+        </div> 
+
+        <div class="projects">
+            <a target="_blank" href="./Transitions/Summary/index.htm">
+                Transitions Summary
+            </a>
+        </div> 
+    </div>
+
+    <!-- Transitions  -->
+    <h1 class="heading">Transitions</h1>
+    <div class="container bottom-padding--small">
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-transitions-basics/different-ways-to-write-the-transitions/index.html">
+                Different Ways of Transitions
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-transitions-basics/transitions-options/timing_functions_examples.htm">
+                Transitions Options
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-transitions-basics/what-is-css-transitions/index.html">
+                What is CSS Transitions
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-transitions-basics/what-properties-can-be-transitioned/index.html">
+                What Properties Can Be Transitioned
+            </a>
+        </div> 
+
+        <span class="border-wall"></span>
+
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-transforms-creative-examples/creative-button-hover-effect-1/index.htm">
+                Creative Button Hover Effect 1
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-transforms-creative-examples/creative-button-hover-effect-2/index.htm">
+                Creative Button Hover Effect 2
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-transforms-creative-examples/creative-button-hover-effect-3/index.htm">
+                Creative Button Hover Effect 3
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-transforms-creative-examples/creative-button-hover-effect-4/index.htm">
+                Creative Button Hover Effect 4
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-transforms-creative-examples/creative-button-hover-effect-5/index.htm">
+                Creative Button Hover Effect 5
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-transforms-creative-examples/creative-button-hover-effect-6/index.htm">
+                Creative Button Hover Effect 6
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-transforms-creative-examples/creative-button-hover-effect-7/index.htm">
+                Creative Button Hover Effect 7
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-transforms-creative-examples/creative-button-hover-effect-8/index.htm">
+                Creative Button Hover Effect 8
+            </a>
+        </div> 
+
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-transforms-creative-examples/image-hover-effect-with-css-transforms-1/index.htm">
+                Image Hover Effect With CSS Transforms 1
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-transforms-creative-examples/image-hover-effect-with-css-transforms-2/index.htm">
+                Image Hover Effect With CSS Transforms 2
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-transforms-creative-examples/image-hover-effect-with-css-transforms-3/index.htm">
+                Image Hover Effect With CSS Transforms 3
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-transforms-creative-examples/image-hover-effect-with-css-transforms-4/index.htm">
+                Image Hover Effect With CSS Transforms 4
+            </a>
+        </div> 
+
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-transforms-creative-examples/image-zoom-in-effect-using-css-transforms/index.htm">
+                Image Zoom in Effect Using CSS Transforms
+            </a>
+        </div> 
+
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-transforms-creative-examples/menu-hover-effect-with-css-transforms/index.htm">
+                Menu Hover Effect With CSS Transforms
+            </a>
+        </div> 
+
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-transforms-creative-examples/smoky-effect/index.htm">
+                Smoky Effect
+            </a>
+        </div> 
+
+        <span class="border-wall"></span>
+
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-animations-and-keyframes/animation-direction/index.htm">
+                Animation Direction
+            </a>
+        </div> 
+
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-animations-and-keyframes/animation-fill-mode/index.htm">
+                Animation Fill Mode
+            </a>
+        </div> 
+
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-animations-and-keyframes/animation-introduction/index.htm">
+                Animation Introduction
+            </a>
+        </div> 
+
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-animations-and-keyframes/animation-iteration-count/index.htm">
+                Animation Iteration Count
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-animations-and-keyframes/animation-shorthand-method/index.htm">
+                Animation Shorthand Method
+            </a>
+        </div>
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-animations-and-keyframes/more-stages/index.htm">
+                More Stages
+            </a>
+        </div> 
+
+        <span class="border-wall"></span>
+
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-animation-creative-examples/animated-button-with-css-animation/index.htm">
+                Animated Button
+            </a>
+        </div> 
+
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-animation-creative-examples/animated-image-pattern-using-css-animation/index.htm">
+                Animated Image Pattern
+            </a>
+        </div> 
+
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-animation-creative-examples/animated-text-background-with-css-animation/index.htm">
+                Animated Text Background
+            </a>
+        </div> 
+
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-animation-creative-examples/bouncing-balls-with-css-animation/index.htm">
+                Bouncing Balls
+            </a>
+        </div> 
+
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-animation-creative-examples/button-shaking-hover-effect-with-css-animation/index.htm">
+                Button Shaking Hover Effect
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-animation-creative-examples/driving-car-and-bike-using-css-animation/index.htm">
+                Driving Car And Bike
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-animation-creative-examples/Fade-image-animation/index.html">
+                Fade Image Animation
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-animation-creative-examples/floating-text-using-css-animation/index.htm">
+                Floating Text
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-animation-creative-examples/heartbeat-with-css-animation/index.htm">
+                Heartbeat
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-animation-creative-examples/lighting-text-with-css-animation/index.htm">
+                Lighting Text
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-animation-creative-examples/loading-effect-using-css-animation/index.htm">
+                Loading Effect
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-animation-creative-examples/rain-effect-with-css-animation/index.html">
+                Rain Effect
+            </a>
+        </div> 
+        <div class="projects">
+            <a target="_blank" href="./Transitions/css-animation-creative-examples/text-rotator-using-css-animation/index.htm">
+                Text Rotator
+            </a>
+        </div> 
+
+
+    </div>
+</body> 
+</html>
