@@ -10,5 +10,5 @@ Some Projects On CSS
 <br/>
 ◾ [Nexter](https://mridul2820.github.io/css-projects/Nexter/index.html)
 <br/>
-◾ [Trilo](https://mridul2820.github.io/css-projects/Trilo/index.html)
+◾ [Trillo](https://mridul2820.github.io/css-projects/Trillo/index.html)
 <br/>
